@@ -1,0 +1,22 @@
+:root {
+  --black: rgb(9,10,10);
+  --dark-brown: rgb(62,29,17);
+  --brown: rgb(141,54,21);
+  --light-brown: rgb(217,154,79);
+  --white: rgb(239,221,186);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  background: var(--black);
+}
+
+h1{
+  color: var(--white);
+}
