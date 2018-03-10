@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header id="header">
       <img id="header-logo" src="images/logo.svg" alt="">
-      <img id="down-arrow" src="images/arrow.svg" alt="">
+      <a href="#sticky"><img id="down-arrow" src="images/arrow.svg" alt=""></a>
     </header>
-    <article class="dark-light">
+    <article class="dark-light" id="sticky">
       <div class="flex-container wrapper">
         <p>The legend goes that an<br><b>Ethiopoian</b> goatherder discovered<br> coffee in the <b>9th-century.</b></p>
         <img class="article-img" src="images/goat.svg" alt="Goat">
@@ -84,3 +84,32 @@
     </footer>
   </body>
 </html>
+<script type="text/javascript">
+
+  document.getElementById("down-arrow").addEventListener("click",function(event){
+    console.log("test");
+  });
+
+
+
+  /*
+  window.onscroll = function() {myFunction()};
+
+  // Get the header
+  var header = document.getElementById("header");
+  var ghostHeader = document.getElementById("header-ghost");
+
+  // Get the offset position of the navbar
+  var stickyInitiator = document.getElementById("sticky");
+  var sticky = stickyInitiator.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+  }
+  */
+</script>
