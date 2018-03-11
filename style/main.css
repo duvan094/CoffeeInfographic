@@ -300,6 +300,55 @@ h4.clickbait-headline{
   background-repeat: no-repeat;
 }
 
+.roast-headline{
+  text-align: center;
+  margin:0;
+  padding-top: 44px;
+}
+
+.large-image-cont{
+  position: relative;
+}
+
+
+.large-image-cont > .dialog{
+  color:#231D17;
+  background:#E8D6BA;
+  max-width: 320px;
+  padding:11px;
+  text-align: center;
+  font-size: 1.6em;
+  position: relative;
+  margin:auto;
+}
+
+.large-image-cont > .dialog::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  top:100%;
+  left:50%;
+  border: transparent solid 35px;
+  border-top: #E8D6BA solid 35px;
+  position:absolute;
+  transform: translate(-50%, 0);
+}
+
+@media(min-width : 720px){
+
+  .large-image-cont > .dialog{
+    position: absolute;
+    color:#231D17;
+    background:#E8D6BA;
+    max-width: 320px;
+    padding:11px;
+    text-align: center;
+    font-size: 1.6em;
+    top:30%;
+  }
+
+}
 
 footer{
   background:#352C24;
@@ -433,4 +482,8 @@ ul.sources{
     line-height: 1em;
     font-size: 3.5em;
   }
+
+
+
+
 }
