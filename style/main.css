@@ -72,6 +72,23 @@ article{
   position: relative;
 }
 
+
+h3{
+  color:#231D17;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.separator{
+  background: #231D17;
+  text-align: center;
+  padding:44px 11px;
+}
+
+.separator h3{
+    color:#F4E3BF;
+}
+
 article .banner{
   position: absolute;
   top:-10%;
@@ -79,9 +96,6 @@ article .banner{
   display: inline-block;
   transform: translate(-50%, -50%);
   background:#E8D6BA;
-  color:#231D17;
-  font-weight: 400;
-  font-size: 3em;
   padding:11px 44px;
   line-height: 1;
   white-space: nowrap;
@@ -131,16 +145,28 @@ article>div{
   position: relative;
 }
 
+.flex-container.center{
+  justify-content: center;
+}
+
+.flex-container.around{
+  justify-content: space-around;
+}
+
 .wrapper{
   max-width: 1280px;
   margin:auto;
+}
+
+article.dark{
+  background: #231D17;
 }
 
 article.dark-light{
   background: #473C33;
 }
 
-article.dark-light p{
+article.dark-light p, article.dark p, article.dark h4{
   color: #F4E3BF;
 }
 
@@ -152,6 +178,15 @@ article.light-dark{
   background: #F4E3BF;
 }
 
+
+article .large-image{
+  width: 100%;
+  max-width: 1280px;
+  margin:auto;
+  padding:44px 22px;
+  box-sizing: border-box;
+}
+
 .article-img{
   width: 100%;
   max-height: 420px;
@@ -160,6 +195,48 @@ article.light-dark{
 
 .right-align{
   text-align: right;
+}
+
+.stats{
+  list-style: none;
+  margin-left: 22px;
+}
+
+.stats>li{
+  font-weight: 300;
+  font-size: 1.5em;
+  padding:11px;
+  line-height: 1.5em;
+}
+
+.stats>li::before{
+  content:"";
+  float:left;
+  margin-right:11px;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  transform: translate(0,25%);
+}
+
+.stats>li.us::before{
+  background: #231D17;
+}
+
+.stats>li.de::before{
+  background: #A34C29;
+}
+
+.stats>li.fr::before{
+  background: #75341A;
+}
+
+.stats>li.it::before{
+  background: #BC8B47;
+}
+
+.stats>li.jp::before{
+  background: #44382E;
 }
 
 .winner-cont, .winner-cont>.article-img{
@@ -194,7 +271,26 @@ article.light-dark{
   font-size: 1.6em;
 }
 
+h4.clickbait-headline{
+  font-size: 5em;
+  font-weight: 500;
+  margin: -22px 0;
+}
 
+.skull-cup-cont{
+  position: relative;
+}
+
+.skull{
+  display: block;
+  position: absolute;
+  left:25%;
+  top:0;
+  width: 35%;
+  height:50%;
+  background-image: url("../images/skull.svg");
+  background-repeat: no-repeat;
+}
 
 
 footer{
