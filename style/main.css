@@ -2,6 +2,18 @@
     font-family: 'Oswald', sans-serif;
 }
 
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #352C24;
+       color: #F4E3BF;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #352C24;
+       color: #F4E3BF;
+}
+
 p{
   font-size: 2em;
   font-weight: 200;
@@ -365,7 +377,7 @@ footer{
 }
 
 footer .wrapper{
-    padding:44px 11px;
+    padding:44px 44px;
 }
 
 ul.sources{
