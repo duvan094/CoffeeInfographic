@@ -152,8 +152,11 @@ div.stripes.light{
   background-size: 120px;
 }
 
-article>.wrapper{
-    min-height: 520px;
+
+@media(min-width:720px){
+  article>.wrapper{
+      min-height: 520px;
+  }
 }
 
 .flex-container{
