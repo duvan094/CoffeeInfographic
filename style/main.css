@@ -61,11 +61,62 @@ header>#header-logo{
 #down-arrow{
   position: absolute;
   width: 50px;
-  bottom:12.5%;
+  bottom:15%;
   left:50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
   display: block;
+}
+
+article{
+  position: relative;
+}
+
+article .banner{
+  position: absolute;
+  top:-10%;
+  left:50%;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+  background:#E8D6BA;
+  color:#231D17;
+  font-weight: 400;
+  font-size: 3em;
+  padding:11px 44px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.banner::before{
+  content:url('../images/bannerLeft.svg');
+  display: block;
+  position: absolute;
+  width: 1.47em;
+  left:0;
+  top:0;
+  transform: translate(-62%, 30%);
+}
+
+.banner::after{
+  content:url('../images/bannerRight.svg');
+  display: block;
+  position: absolute;
+  width: 1.47em;
+  left:100%;
+  top:0;
+  transform: translate(-37%, 29%);
+}
+
+.banner.dark{
+  background: #44382E;
+  color:#F4E3BF;
+}
+
+.banner.dark::before{
+  content:url('../images/bannerLeft-dark.svg');
+}
+.banner.dark::after{
+    content:url('../images/bannerRight-dark.svg');
 }
 
 article>div{
@@ -85,19 +136,19 @@ article>div{
   margin:auto;
 }
 
-.dark-light{
+article.dark-light{
   background: #473C33;
 }
 
-.dark-light p{
+article.dark-light p{
   color: #F4E3BF;
 }
 
-.light{
+article.light{
   background: #F9EFDF;
 }
 
-.light-dark{
+article.light-dark{
   background: #F4E3BF;
 }
 
