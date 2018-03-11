@@ -225,8 +225,13 @@ article .large-image{
   margin-left: 22px;
 }
 
+.stat-text{
+  font-size: 1.2em;
+  margin-bottom: 11px;
+}
+
 .stats>li{
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1.5em;
   padding:11px;
   line-height: 1.5em;
@@ -326,7 +331,7 @@ h4.clickbait-headline{
 }
 
 
-.large-image-cont > .dialog{
+.large-image-cont > .info{
   color:#231D17;
   background:#E8D6BA;
   max-width: 320px;
@@ -337,7 +342,7 @@ h4.clickbait-headline{
   margin:auto;
 }
 
-.large-image-cont > .dialog::after{
+.large-image-cont > .info.arrow::after{
   content: "";
   display: block;
   width: 0;
@@ -350,9 +355,32 @@ h4.clickbait-headline{
   transform: translate(-50%, 0);
 }
 
+.footnote.map{
+  left:0;
+  font-size: 1em;
+  padding-left: 11px;
+  bottom:1em;
+}
+
+.footnote.map a{
+  color:#F4E3BF;
+  text-decoration: none;
+}
+
+.footnote.map::before{
+    content:"";
+    float:left;
+    margin-right:11px;
+    display: block;
+    width: 1em;
+    height: 1em;
+    transform: translate(0,25%);
+    background: #E8D6BA;
+}
+
 @media(min-width : 720px){
 
-  .large-image-cont > .dialog{
+  .large-image-cont > .info{
     position: absolute;
     color:#231D17;
     background:#E8D6BA;
@@ -361,6 +389,16 @@ h4.clickbait-headline{
     text-align: center;
     font-size: 1.6em;
     top:30%;
+  }
+
+  .large-image-cont > .info.brazil{
+    right:0;
+    top:10%;
+    padding:11px 44px;
+  }
+
+  .footnote.map{
+    bottom:2em;
   }
 
 }
