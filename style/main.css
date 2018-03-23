@@ -67,6 +67,9 @@ header>#header-logo{
   width: 50px;
   bottom:15%;
   left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
   display: block;
@@ -98,6 +101,9 @@ article .banner{
   top:-10%;
   left:50%;
   display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background:#E8D6BA;
   padding:11px 44px;
@@ -112,6 +118,9 @@ article .banner{
   width: 1.47em;
   left:0;
   top:0;
+  -webkit-transform: translate(-62%, 30%);
+  -moz-transform: translate(-62%, 30%);
+  -o-transform: translate(-62%, 30%);
   transform: translate(-62%, 30%);
 }
 
@@ -122,6 +131,9 @@ article .banner{
   width: 1.47em;
   left:100%;
   top:0;
+  -webkit-transform: translate(-37%, 29%);
+  -moz-transform: translate(-37%, 29%);
+  -o-transform: translate(-37%, 29%);
   transform: translate(-37%, 29%);
 }
 
@@ -244,6 +256,9 @@ article .large-image{
   display: block;
   width: 1.2em;
   height: 1.2em;
+  -webkit-transform: translate(0,25%);
+  -moz-transform: translate(0,25%);
+  -o-transform: translate(0,25%);
   transform: translate(0,25%);
 }
 
@@ -275,6 +290,9 @@ article .large-image{
 #medal{
   position: absolute;
   width: 35%;
+  -webkit-transform: translate(25%, -75%);
+  -moz-transform: translate(25%, -75%);
+  -o-transform: translate(25%, -75%);
   transform: translate(25%, -75%);
 }
 
@@ -318,6 +336,9 @@ h4.clickbait-headline{
   height:52%;
   background-image: url("../images/skull.svg");
   background-repeat: no-repeat;
+  -webkit-animation: skull 4s infinite ease-in-out;
+  -moz-animation: skull 4s infinite ease-in-out;
+  -o-animation: skull 4s infinite ease-in-out;
   animation: skull 4s infinite ease-in-out;
 }
 
@@ -377,6 +398,9 @@ h4.clickbait-headline{
   border: transparent solid 35px;
   border-top: #E8D6BA solid 35px;
   position:absolute;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 
@@ -399,6 +423,9 @@ h4.clickbait-headline{
     display: block;
     width: 1em;
     height: 1em;
+    -webkit-transform: translate(0,25%);
+    -moz-transform: translate(0,25%);
+    -o-transform: translate(0,25%);
     transform: translate(0,25%);
     background: #E8D6BA;
 }
@@ -490,7 +517,9 @@ ul.sources{
   top:10%;
   width: 40%;
   right:7%;
-
+  -webkit-animation: expand-heart 4s infinite ease-in-out;
+  -moz-animation: expand-heart 4s infinite ease-in-out;
+  -o-animation: expand-heart 4s infinite ease-in-out;
   animation: expand-heart 4s infinite ease-in-out;
 }
 
@@ -521,15 +550,24 @@ ul.sources{
 
 .goat.legs{
   z-index: 1;
+  -webkit-animation: jump-legs 1s infinite ease-in-out;
+  -moz-animation: jump-legs 1s infinite ease-in-out;
+  -o-animation: jump-legs 1s infinite ease-in-out;
   animation: jump-legs 1s infinite ease-in-out;
 }
 
 .animation-container>.shadow{
   position: absolute;
-  animation: shadow 1s infinite ease-in-out;;
+  -webkit-animation: shadow 1s infinite ease-in-out;
+  -moz-animation: shadow 1s infinite ease-in-out;
+  -o-animation: shadow 1s infinite ease-in-out;
+  animation: shadow 1s infinite ease-in-out;
   bottom:0;
   left:0;
-  transform: translate(00);
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
 }
 
 @keyframes shadow {
