@@ -27,6 +27,7 @@ p>b{
 body{
   padding:0;
   margin:0;
+  overflow-x: hidden;
 }
 
 
@@ -57,8 +58,8 @@ header.sticky{
 }
 */
 header>#header-logo{
-  height:100%;
-  width: auto;
+  height:auto;
+  width: 100%;
 }
 
 
@@ -289,11 +290,9 @@ article .large-image{
 
 #medal{
   position: absolute;
+  top: 70%;
+  left: 25%;
   width: 35%;
-  -webkit-transform: translate(25%, -75%);
-  -moz-transform: translate(25%, -75%);
-  -o-transform: translate(25%, -75%);
-  transform: translate(25%, -75%);
 }
 
 .footnote{
